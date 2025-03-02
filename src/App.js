@@ -47,20 +47,25 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header" id="container">
         <Webcam 
           ref={webcamRef}
           style={{
             position: "absolute",
             marginleft: "auto",
             marginRight: "auto",
-            left: 0,
+            left: 450,
             right: 0,
             textAlign: "center",
-            zindex: 9,
-            width: 640,
-            height: 480,
+            // zindex: 9,
+            zindex: 1,
+            // width: 640,
+            // height: 480,
+            width: 1000,
+            height: 1000,
+            opacity: 0.7,
           }}
+  
           />
           <canvas
             ref={canvasRef}
@@ -68,12 +73,15 @@ function App() {
               position: "absolute",
               marginleft: "auto",
               marginRight: "auto",
-              left: 0,
+              left: 450,
               right: 0,
               textAlign: "center",
-              zindex: 9,
-              width: 640,
-              height: 480,
+              // zindex: 9,
+              zindex: 10,
+              // width: 640,
+              // height: 480,
+              width: 1000,
+              height: 1000,
             }}
           />
       </header>
