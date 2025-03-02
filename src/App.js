@@ -9,6 +9,9 @@ function App() {
   const webcamRef = useRef(null);
   const canvasRef = useRef(null);
 
+  // let oldX, oldY;
+  // const coordArray
+
   const runHandpose = async () => {
     const net = await handpose.load()
     console.log('Handpose model loaded.');
@@ -61,9 +64,9 @@ function App() {
             zindex: 1,
             // width: 640,
             // height: 480,
-            width: 1000,
-            height: 1000,
-            opacity: 0.7,
+            width: 1500,
+            height: 1500,
+            // opacity: 0.7,
           }}
   
           />
@@ -80,8 +83,8 @@ function App() {
               zindex: 10,
               // width: 640,
               // height: 480,
-              width: 1000,
-              height: 1000,
+              width: 1500,
+              height: 1500,
             }}
           />
       </header>

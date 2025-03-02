@@ -39,3 +39,10 @@
 
 }
 
+.three-canvas {
+  border: 5px solid red;
+  position:absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
