@@ -39,7 +39,7 @@ function App() {
       //console.log(hand);
 
       const ctx = canvasRef.current.getContext("2d");
-      drawHand(hand, ctx);
+      drawHand(hand, ctx, videoWidth, videoHeight);
     }
   }
 
